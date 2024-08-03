@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.colorBox {
+    width: 25px;
+    height: 20px;
+}
+
+.color1 {
+    background-color: var(--process1);
+}
+
+.color2 {
+    background-color: var(--process2);
+}
+
+.color3 {
+    background-color: var(--process3);
+}
+
+.color4 {
+    background-color: var(--process4);
+}
+
+.processContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.processStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 5vh 0;
+    width: 240px;
+    height: 420px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    position: relative;
+}
+
+.meetPlan {
+    border: 15px solid var(--process1);
+    border-bottom: 120px solid var(--process1);
+}
+
+.design {
+    border: 15px solid var(--process2);
+    border-bottom: 120px solid var(--process2);
+}
+
+.development {
+    border: 15px solid var(--process3);
+    border-bottom: 120px solid var(--process3);
+}
+
+.launch {
+    border: 15px solid var(--process4);
+    border-bottom: 120px solid var(--process4);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.para {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.stepNumber {
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 0 8px;
+    width: 70px;
+    bottom: -5%;
+    height: 70px;
+    border-radius: 50%;
+    color: aliceblue;
+}

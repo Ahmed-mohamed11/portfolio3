@@ -1,0 +1,104 @@
+.nav {
+  margin-top: -7rem;
+}
+
+.content {
+  width: 100vw;
+  height: 115vh;
+  background: url("../../public/home.jpg") no-repeat center center/cover;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--icon);
+  opacity: 0.8;
+}
+
+.activeLink {
+  color: var(--line1) !important;
+  font-weight: bold;
+  border-bottom: 0.2rem solid var(--line2);
+}
+
+.noAfter::after {
+  display: none !important;
+}
+
+.navbarToggle {
+  color: white !important;
+}
+
+.bgT {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.bgBl {
+  background: transparent;
+  backdrop-filter: blur(0px);
+}
+
+.toggleLink {
+  width: max-content;
+}
+
+.responsiveLogo {
+  width: 300px;
+}
+
+@media (max-width: 991px) {
+
+  .bgBl {
+    position: relative;
+    background: linear-gradient(135deg, #011b3d, #3083fd);
+    backdrop-filter: blur(3px);
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .bgBl {
+    background: linear-gradient(135deg, #011b3d, #3083fd);
+    backdrop-filter: blur(3px);
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+  }
+
+  .responsiveLogo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+[dir="rtl"] .noAfter{
+margin:0 15vw 0 0 !important;
+}
+}
+@media (max-width: 440px) {
+  .content {
+    height: 113.5vh;
+  }
+
+  .content::before {
+    height: 98vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .responsiveLogo {
+    width: 150px;
+  }
+}

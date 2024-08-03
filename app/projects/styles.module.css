@@ -1,0 +1,142 @@
+.gradientBackground {
+    background-color: #011b3d;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 28vh;
+}
+
+@media screen and (min-width: 1537px) {
+    .gradientBackground {
+        height: 22vh;
+    }
+}
+
+.custom-radio:checked+.custom-label {
+    @apply bg-blue-500 text-white;
+}
+
+.card {
+    position: relative;
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check {
+    background-color: blue;
+    border: blue
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sliderInner {
+    display: flex;
+    width: calc(300% * 3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.contImages {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: var(--services);
+    margin: auto;
+}
+
+.slideImage {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    height: 12vh;
+    object-fit: scale-down;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+    -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+    -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+    -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.slide {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 5vh 0;
+}
+
+
+.image {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover .image {
+    opacity: 0.5;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.imageContainer {
+    width: 30vw;
+    height: 23vh;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
